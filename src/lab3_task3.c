@@ -3,6 +3,7 @@
  * Name: Theophane Glasson
  * Student ID: 260ADB191
  * 
+ * 
  * Implement basic string handling functions.
  * Write your own versions of:
  *   - my_strlen (finds string length, not counting '\0')
