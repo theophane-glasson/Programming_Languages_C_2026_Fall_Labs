@@ -14,23 +14,30 @@
 #include <stdio.h>
 #include <string.h>
 
-// TODO: Define struct Student with fields: name (char[50]), id (int), grade (float)
-// Example:
-// struct Student {
-//     char name[50];
-//     int id;
-//     float grade;
-// };
+// Define struct Student with fields: name, id, grade
+struct Student {
+    char name[50];
+    int id;
+    float grade;
+};
 
 int main(void) {
-    // TODO: Declare two Student variables
+    // Declare two Student variables
+    struct Student s1;
+    struct Student s2;
 
-    // TODO: Assign the values (use strcpy for the name):
-    //       Student 1: Alice Johnson, 1001, 9.1
-    //       Student 2: Bob Smith,     1002, 8.7
+    // Assign the values
+    strcpy(s1.name, "Alice Johnson");
+    s1.id = 1001;
+    s1.grade = 9.1f;
 
-    // TODO: Print each student exactly as:
-    //       Student <k>: <name>, ID: <id>, Grade: <grade with 1 decimal, %.1f>
+    strcpy(s2.name, "Bob Smith");
+    s2.id = 1002;
+    s2.grade = 8.7f;
+
+    // Print each student
+    printf("Student 1: %s, ID: %d, Grade: %.1f\n", s1.name, s1.id, s1.grade);
+    printf("Student 2: %s, ID: %d, Grade: %.1f\n", s2.name, s2.id, s2.grade);
 
     return 0;
 }
